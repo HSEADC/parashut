@@ -1,12 +1,2 @@
-# Static Site Boilerplate
-
-## How to start
-
-Clone the repository, install packages, start
-
-```
-git clone https://github.com/ZakharDay/static-site-boilerplate.git
-cd static-site-boilerplate
-yarn
-yarn start
-```
+#ПФРАШЮТ
+Парашют — это медиа о странных изобретениях. Мы рассказываем о непростых темах увлекательно и легко.
