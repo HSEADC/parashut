@@ -10,14 +10,26 @@ body.section_1 {
 
   .screen_1 {
     position: relative;
-    height: 36rem;
-    padding: 0 13.9rem;
+    display: flex;
+    height: 100%;
+    padding: 0px 6.5rem;
+    flex-direction: column;
 
     > * {
       position: relative;
     }
+    a {
+      margin: 3rem 0 1rem 0;
+      color: $orange;
+      transition: 0.1s;
+      width: 7rem;
+    }
+    a:hover {
+      color: $pink;
+      transition: 0.1s;
+    }
     .cover {
-      width: 67.5rem;
+      width: 100%;
       height: 21rem;
       font-family: 'Voxel', sans-serif;
       font-size: 7.5rem;
@@ -25,201 +37,78 @@ body.section_1 {
       background-size: 100%;
       background-repeat: no-repeat;
       background-image: url('images/articles/detki.png');
+
+      p {
+        position: relative;
+        margin: 0 auto;
+        top: 15%;
+        text-align: center;
+        width: 30rem;
+      }
+    }
+    .tags {
+      padding: 1rem 0 3rem 0;
+      display: flex;
+      flex-direction: row;
+      gap: 0.7rem;
+
+      p {
+        display: flex;
+        padding: 0.5rem 2rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        border-radius: 10rem;
+        background-color: $white;
+        color: $orange;
+        outline: 2px solid $orange;
+        box-sizing: border-box;
+      }
     }
   }
-  .display_2 {
+  .screen_2 {
     position: relative;
     width: auto;
-    height: 72vw;
-    padding: 0 13.9vw;
+    height: 100%;
+    padding: 0 6.5rem;
+
     //    background-color: rgb(166, 193, 255);
     //    opacity: 15%;
-    .text {
-      font-size: 1.875vw;
-      line-height: 3vw;
-      top: 5vw;
-      left: 13.9vw;
-      right: 13.9vw;
-      position: absolute;
+    p {
+      font-size: 1.5rem;
+      color: $black;
+      position: relative;
+      line-height: 140%;
+      padding-bottom: 5rem;
     }
-    p::first-letter {
-      font-family: 'Mutabor', sans-serif;
-      font-size: 7vw;
-      color: #dfa532;
+    p:nth-child(2) {
+      color: $orange;
+      font-size: 1rem;
+      text-align: center;
+      width: 50%;
+      margin: 0 auto;
     }
   }
-  .display_3 {
+  .screen_3 {
     position: relative;
     width: auto;
-    height: 32vw;
-    padding: 0 13.9vw;
+    height: 100%;
+    padding: 0 6.5rem;
 
-    .main {
-      top: 0vw;
-      font-size: 1.9vw;
-      left: 13.9vw;
-      position: absolute;
-      color: #dfa532;
+    > div {
+      display: flex;
+      padding: 3rem 0;
+      flex-wrap: wrap;
+      gap: 1rem;
+      flex-direction: row;
+      justify-content: center;
     }
 
-    .rac_1 {
-      background-color: #eaeaea;
-      position: absolute;
-      width: 23.3vw;
-      height: 18.3vw;
-      top: 3.5vw;
-      left: 13.9vw;
-      border-radius: 20px;
-
-      .w_3 {
-        position: absolute;
-        height: 2.4vw;
-        width: 12.6vw;
-        border-radius: 20px;
-        background: #fff;
-        top: 0.6vw;
-        left: 0.8vw;
-      }
-      .on_w {
-        position: absolute;
-        font-size: 1.25vw;
-        top: 1vw;
-        left: 2.3vw;
-      }
-      .car {
-        position: absolute;
-        font-size: 2.1vw;
-        top: 11.7vw;
-        left: 1.2vw;
-      }
-      .pro_car {
-        position: absolute;
-        font-size: 1.1vw;
-        top: 14.6vw;
-        left: 1.2vw;
-      }
-    }
-    .rac_2 {
-      position: absolute;
-      width: 35.6vw;
-      height: 18.3vw;
-      top: 3.5vw;
-      left: 38.3vw;
-      border-radius: 15px;
-      img {
-        position: absolute;
-        width: 35.6vw;
-        height: 18.3vw;
-        border-radius: 15px;
-      }
-      .w_4 {
-        position: absolute;
-        height: 2.4vw;
-        width: 9.4vw;
-        border-radius: 20px;
-        background: #fff;
-        top: 0.6vw;
-        left: 0.8vw;
-      }
-      .on_w4 {
-        position: absolute;
-        font-size: 1.25vw;
-        top: 1vw;
-        left: 2.3vw;
-      }
-      .w_5 {
-        position: absolute;
-        height: 2.4vw;
-        width: 13.7vw;
-        border-radius: 20px;
-        background: #fff;
-        top: 0.6vw;
-        left: 10.7vw;
-      }
-      .on_w5 {
-        position: absolute;
-        font-size: 1.25vw;
-        top: 1vw;
-        left: 12.2vw;
-      }
-      .look {
-        position: absolute;
-        font-size: 2.1vw;
-        top: 11.7vw;
-        left: 1.2vw;
-        color: white;
-      }
-      .pro_look {
-        position: absolute;
-        font-size: 1.1vw;
-        top: 14.6vw;
-        left: 1.2vw;
-        color: white;
-      }
-    }
-  }
-  .rac_3 {
-    background-color: #eaeaea;
-    position: absolute;
-    width: 11.3vw;
-    height: 18.3vw;
-    top: 3.5vw;
-    left: 74.9vw;
-    border-radius: 20px;
-
-    .w_6 {
-      position: absolute;
-      height: 2.4vw;
-      width: 9.4vw;
-      border-radius: 20px;
-      background: #fff;
-      top: 0.6vw;
-      left: 0.8vw;
-    }
-    .on_w6 {
-      position: absolute;
-      font-size: 1.25vw;
-      top: 1vw;
-      left: 2.3vw;
-    }
-    .sloop {
-      position: absolute;
-      font-size: 2.1vw;
-      top: 11.7vw;
-      left: 1vw;
-    }
-    .pro_sloop {
-      position: absolute;
-      font-size: 1.1vw;
-      top: 14.6vw;
-      left: 1.2vw;
-    }
-  }
-  .podvalik {
-    position: relative;
-    width: auto;
-    height: auto;
-
-    .podval {
-      position: absolute;
-      width: 100vw;
-      height: auto;
-    }
-    .title {
-      position: absolute;
-      font-family: 'Mutabor', sans-serif;
-      font-size: 2vw;
-      color: white;
-      top: 3.3vw;
-      left: 13.9vw;
-    }
-    .form {
-      position: absolute;
-      font-size: 1.6vw;
-      color: white;
-      top: 2.2vw;
-      left: 38.3vw;
-      line-height: 1.7vw;
+    > p {
+      font-family: 'Voxel', sans-serif;
+      position: relative;
+      font-size: 3.5rem;
+      color: $orange;
     }
   }
 }

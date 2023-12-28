@@ -72,7 +72,7 @@ module.exports = {
           filename: 'images/[hash][ext][query]'
         }
       },
-     {
+      {
         test: /\.jpg/,
         type: 'asset/resource',
         generator: {
@@ -139,10 +139,16 @@ module.exports = {
       template: './src/collector.html',
       filename: './collector.html'
     }),
-    // О проекте 
+    // О проекте
     new HtmlWebpackPlugin({
       template: './src/about_project.html',
       filename: './about_project.html'
+    }),
+
+    // Стайлгайд
+    new HtmlWebpackPlugin({
+      template: './src/styleguide.html',
+      filename: './styleguide.html'
     }),
 
     // Partials
