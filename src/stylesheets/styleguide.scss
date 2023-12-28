@@ -1,0 +1,304 @@
+$pink: #f6cfe2;
+$orange: #ef7c05;
+$white: #f4f4f4;
+$black: #001806;
+
+body.styleguide {
+  font-family: 'Cygre', sans-serif;
+  width: 100%;
+  .back_1 {
+    top: 187rem;
+    width: 100%;
+    height: 56rem;
+    position: absolute;
+    background-image: url('./images/style/screen_4.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 30%;
+    z-index: 10;
+    // display: none;
+  }
+
+  .menu_style {
+    outline: 2px solid $black;
+    box-sizing: border-box;
+    position: fixed;
+    border-radius: 1rem;
+    height: 10rem;
+    width: 8.5rem;
+
+    p {
+      margin-top: 0.3rem;
+      margin-left: 1rem;
+    }
+    p:first-child {
+      margin-top: 1rem;
+    }
+
+    P:hover {
+      color: $orange;
+    }
+  }
+  .tag {
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10rem;
+    width: fit-content;
+  }
+
+  .screen_1 {
+    z-index: 10;
+    position: relative;
+    height: 100vh;
+    padding: 4rem 6rem;
+    flex-direction: column;
+    .title {
+      position: relative;
+      margin: 0 auto;
+      height: 22.6rem;
+      width: 41rem;
+      margin-top: 6rem;
+      text-align: center;
+      color: $orange;
+      font-family: 'Voxel', sans-serif;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-image: url('images/style/paper_2.png');
+
+      p {
+        // color: $orange;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 14%;
+        line-height: 5.5rem;
+        font-size: 6rem;
+      }
+    }
+    .tags {
+      padding: 0 14rem 0 0;
+      display: flex;
+      flex-direction: row;
+      gap: 0.7rem;
+      justify-content: flex-end;
+
+      p {
+        display: flex;
+        padding: 0.5rem 1.5rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        border-radius: 10rem;
+      }
+      p:first-child {
+        background-color: $orange;
+        color: $white;
+        box-sizing: border-box;
+      }
+      p:nth-child(2) {
+        color: $black;
+        outline: 2px solid $black;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  .screen_2 {
+    position: relative;
+    height: 100%;
+    padding: 0 6rem;
+    > div {
+      position: relative;
+      background-color: $orange;
+      margin-top: 3rem;
+      margin-right: -4.5rem;
+      margin-left: 11.5rem;
+      height: 42.5rem;
+      border-radius: 2rem;
+      padding: 4rem;
+      box-sizing: border-box;
+
+      .tag {
+        background-color: $white;
+        color: $orange;
+      }
+      > p:nth-child(3) {
+        color: $white;
+        font-size: 1.5rem;
+        position: relative;
+        padding-top: 2rem;
+        margin-bottom: 6.5rem;
+        width: 25rem;
+        line-height: normal;
+      }
+      .mission {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-top: 4.5rem;
+
+        p:nth-child(1) {
+          color: $white;
+          width: 4rem;
+        }
+        p:nth-child(2) {
+          color: $black;
+          padding-left: 5.5rem;
+          width: 19rem;
+          line-height: normal;
+        }
+      }
+    }
+    img {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 42rem;
+    }
+  }
+
+  .screen_3 {
+    position: relative;
+    height: 37.5rem;
+    padding: 0 6rem;
+    p {
+      position: relative;
+      margin-top: 5rem;
+      margin-left: 14.5rem;
+    }
+    .tag {
+      background-color: $orange;
+      color: $white;
+    }
+    > div {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      height: 94%;
+      align-items: flex-end;
+
+      > div {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      > img {
+        margin-right: 17rem;
+      }
+    }
+  }
+
+  .screen_4 {
+    position: relative;
+    height: 100%;
+    padding: 0 6rem;
+    > div {
+      position: relative;
+      background-color: $pink;
+      margin-top: 3rem;
+      margin-right: -4.5rem;
+      margin-left: 11.5rem;
+      height: 42.5rem;
+      border-radius: 2rem;
+      padding: 3rem 4.6rem 4rem 3rem;
+      box-sizing: border-box;
+
+      > p {
+        font-family: 'Voxel', sans-serif;
+        position: absolute;
+        font-size: 21rem;
+        margin-top: 1rem;
+        line-height: 17rem;
+        color: $white;
+      }
+
+      .head {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+
+        .tag {
+          background-color: $white;
+          color: $orange;
+        }
+        > p:nth-child(2) {
+          position: relative;
+          /* display: flex; */
+          flex-direction: row;
+          flex-wrap: nowrap;
+          padding-left: 1rem;
+          width: 16rem;
+          line-height: normal;
+        }
+      }
+      img:last-child {
+        position: relative;
+        float: inline-end;
+        padding-top: 19.5rem;
+      }
+    }
+    img:first-child {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 40rem;
+    }
+  }
+  .screen_5 {
+    position: relative;
+    height: 37.5rem;
+    padding: 0 6rem;
+    .tags_2 {
+      display: flex;
+      flex-direction: row;
+      gap: 0.7rem;
+      align-content: flex-start;
+
+      > p:nth-child(2) {
+        margin-left: 0.5rem;
+        background-color: $white;
+        color: $black;
+        outline: 2px solid $black;
+      }
+    }
+    p {
+      position: relative;
+      margin-top: 5rem;
+      margin-left: 14.5rem;
+    }
+    .tag {
+      background-color: $orange;
+      color: $white;
+    }
+    > img {
+      position: relative;
+      margin-top: 4rem;
+      left: 33rem;
+    }
+  }
+
+  .screen_6 {
+    position: relative;
+    height: 100%;
+    padding: 0 6rem;
+
+    img {
+      position: relative;
+      margin-top: 3rem;
+      margin-left: 9rem;
+    }
+  }
+  .screen_7 {
+    position: relative;
+    height: 47rem;
+    overflow-x: hidden;
+
+    img {
+      position: absolute;
+    }
+  }
+}
