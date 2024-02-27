@@ -120,35 +120,10 @@ module.exports = {
       filename: './tests.html'
     }),
 
-    // Article
+    //Components
     new HtmlWebpackPlugin({
-      template: './src/articles/article_1.html',
-      filename: './articles/article_1.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/videos/video_1.html',
-      filename: './videos/video_1.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/tests/test_1.html',
-      filename: './tests/test_1.html'
-    }),
-
-    // Заглушка
-    new HtmlWebpackPlugin({
-      template: './src/collector.html',
-      filename: './collector.html'
-    }),
-    // О проекте
-    new HtmlWebpackPlugin({
-      template: './src/about_project.html',
-      filename: './about_project.html'
-    }),
-
-    // Стайлгайд
-    new HtmlWebpackPlugin({
-      template: './src/styleguide.html',
-      filename: './styleguide.html'
+      template: './src/components.html',
+      filename: './components.html'
     }),
 
     // Partials

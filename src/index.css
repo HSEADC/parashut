@@ -2,9 +2,13 @@
 @import 'stylesheets/fonts.scss';
 @import 'stylesheets/vars.scss';
 @import 'stylesheets/articles.scss';
-@import 'stylesheets/videos.scss';
-@import 'stylesheets/tests.scss';
+/* @import 'stylesheets/videos.scss';
+@import 'stylesheets/tests.scss'; */
 @import 'stylesheets/index.scss';
-@import 'stylesheets/collector.scss';
+/* @import 'stylesheets/collector.scss';
 @import 'stylesheets/about_project.scss';
-@import 'stylesheets/styleguide.scss';
+@import 'stylesheets/styleguide.scss'; */
+
+/* atoms */
+@import 'stylesheets/components/atoms/a_test-button.scss';
+@import 'stylesheets/components/atoms/a_main-menu.scss';
