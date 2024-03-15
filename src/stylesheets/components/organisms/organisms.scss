@@ -1,0 +1,153 @@
+//widgets
+
+.O_note {
+  display: flex;
+  width: 16.5rem;
+  padding: 1rem;
+  flex-direction: column;
+  // align-items: flex-start;
+  gap: 1rem;
+  border-radius: 1rem;
+  background: var(--light-orange);
+  box-shadow: 0px 4px 20px 0px rgba(239, 124, 5, 0.33);
+}
+
+.O_search {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  border-radius: 1rem;
+  background: var(--white);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.1);
+
+  &.Short {
+    width: 16.5rem;
+  }
+  &.Long {
+    width: 33.5rem;
+  }
+}
+
+.O_invention {
+  display: flex;
+  width: 16.5rem;
+  padding: 1rem;
+  flex-direction: column;
+  // align-items: flex-start;
+  gap: 1rem;
+  border-radius: 1rem;
+  background: var(--black);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.O_card-text-content {
+  display: flex;
+  width: 15rem;
+  gap: 1.2rem;
+
+  flex-wrap: wrap;
+  &.Video {
+    border: 1px solid var(--white);
+    padding: 0.75rem;
+    position: relative;
+    z-index: 1;
+    border-radius: 0.75rem;
+  }
+}
+
+.O_article-card {
+  display: flex;
+  width: 16.5rem;
+  padding: 0.75rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 1rem;
+  background: var(--white);
+}
+
+.O_test-card {
+  display: flex;
+  width: 16.5rem;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  background: var(--orange, #f4762e);
+}
+
+.O_video-card {
+  display: flex;
+  width: 33.5625rem;
+  padding: 0.75rem;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0.625rem;
+  flex-wrap: wrap;
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 1rem;
+  position: relative;
+  &::after {
+    content: '';
+    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      111deg,
+      rgba(0, 0, 0, 0.6) 15.77%,
+      rgba(0, 0, 0, 0) 107.67%
+    );
+  }
+  &.Image-type {
+    background-image: url('./././images/articles/article-kletki-dlya-detki.jpg');
+  }
+}
+
+//test
+
+.O_test-content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.O_test-progress-container {
+  display: flex;
+  width: 39.0625rem;
+  height: 23.1875rem;
+  padding: 3.5rem 0rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 1rem;
+  background: var(--white);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+}
+.O_test-result-container {
+  display: flex;
+  width: 39.0625rem;
+  height: 23.1875rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 1rem;
+  background: var(--orange);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.O_header {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem 6.25rem;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--white);
+}

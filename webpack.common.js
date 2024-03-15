@@ -124,17 +124,41 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/components.html',
       filename: './components.html'
-    })
+    }),
 
     // Partials
-    // new HtmlWebpackPartialsPlugin([
-    //   {
-    //     path: path.join(__dirname, './src/partials/analytics.html'),
-    //     location: 'analytics',
-    //     template_filename: '*',
-    //     priority: 'replace'
-    //   }
-    // ])
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/sidebar-white.html'),
+        location: 'sidebar-white',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/sidebar-black.html'),
+        location: 'sidebar-black',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/socialmedia.html'),
+        location: 'socialmedia',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/header.html'),
+        location: 'header',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ])
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()]

@@ -1,0 +1,62 @@
+.C_sidebar {
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+}
+.C_socialmedia {
+  display: inline-flex;
+  gap: 0.5rem;
+}
+
+.C_tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  &.Orange {
+    * {
+      border: 1px solid var(--orange);
+      color: var(--orange);
+    }
+  }
+  &.White {
+    * {
+      border: 1px solid var(--white);
+      color: var(--white);
+    }
+  }
+}
+.C_test-variants {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.C_main-menu {
+  display: inline-flex;
+  gap: 1rem;
+  &.Burger {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.C_tags-articles {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  * {
+    border: 1px solid var(--orange);
+    color: var(--orange);
+  }
+}
+
+.c_videos {
+  display: flex;
+  width: 67.75rem;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,258 @@
+//titles
+
+h1 {
+  font-size: 80px;
+  line-height: 120%;
+}
+
+h2 {
+  font-size: 52px;
+  line-height: 120%;
+}
+
+h3 {
+  font-size: 48px;
+  line-height: 110%;
+}
+
+h4 {
+  font-size: 32px;
+  line-height: 110%;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+//buttons and tags
+
+.A_main-menu {
+  @include font(var(--black), 'Phlatt Grotesk', 1rem);
+  transition: 0.1s;
+
+  &:hover {
+    transition: 0.1s;
+    color: var(--orange);
+  }
+}
+
+.A_tag {
+  @include font(default, 'Phlatt Grotesk', 0.75rem);
+  display: inline-flex;
+  padding: 0.125rem 0.5rem;
+  border-radius: 2rem;
+}
+
+//cards
+.A_card-title {
+  @include font(default, 'Pitagon Sans Mono');
+  height: 4.375rem;
+  width: 100%;
+  &.Orange {
+    color: var(--orange);
+  }
+  &.White {
+    color: var(--white);
+  }
+}
+
+.A_card-text {
+  @include font(var(--black), 'Phlatt Grotesk', 1rem, 120%);
+  align-self: stretch;
+  padding: 0.5rem 0.625rem;
+  width: 100%;
+  height: 4.625rem;
+  border-radius: 0.5rem;
+  &.Test-Article {
+    background-color: var(--light-orange);
+  }
+  &.Video {
+    background-color: var(--white);
+  }
+}
+
+.A_card-cover {
+  width: 15rem;
+  height: 11rem;
+  border-radius: 0.5rem;
+}
+
+.A_invention-name {
+  @include font(var(--white), 'Pitagon Sans Mono');
+}
+
+.A_invention-image {
+  width: 14.5rem;
+  height: 16rem;
+}
+//logotype
+
+.A_logo {
+  @include font(default, 'Pitagon Sans Mono', 1.5rem, default, uppercase);
+  &.Black {
+    color: var(--black);
+  }
+  &.White {
+    color: var(--black);
+  }
+}
+
+//widgets
+.A_note-text {
+  @include font(var(--black), 'Pitagon Sans Mono', 2rem, 110%);
+}
+
+.A_search-text {
+  @include font(var(--black), 'Pitagon Sans Mono', 1rem);
+  .Title {
+    color: var(--orange);
+  }
+  p {
+    display: inline;
+  }
+}
+.A_widget-title {
+  @include font(default, 'Phlatt Grotesk');
+  width: 106px;
+}
+
+//articles
+
+.A_test-and-article-cover {
+  @include cover;
+  height: 21.875rem;
+  width: inherit;
+  &.Image-type {
+    background-image: url('./././images/articles/article-kletki-dlya-detki.jpg');
+  }
+}
+.A_image-article {
+  @include cover;
+  width: 50rem;
+  height: 28.125rem;
+  &.Image-type {
+    background-image: url('./././images/articles/article-kletki-dlya-detki.jpg');
+  }
+}
+
+.A_text-article {
+  @include font(var(--black), 'Pitagon Sans Mono', 1.25rem, 150%);
+}
+
+.A_quote {
+  @include font(
+    var(--orange),
+    'Pitagon Sans Mono',
+    1.5rem,
+    120%,
+    default,
+    center
+  );
+  padding: 1rem 0rem;
+}
+
+.A_image-descriprion {
+  @include font(var(--black), 'Pitagon Sans Mono', 1rem);
+  display: inline-flex;
+  padding: 0rem 0.75rem;
+  border-radius: 0.25rem;
+  background: var(--orange);
+  max-width: 50%;
+}
+
+//titles
+
+.A_title-text {
+  @include font(var(--black), 'Phlatt Grotesk', default, default, uppercase);
+}
+
+.A_page-title {
+  @include font(
+    var(--black),
+    'Phlatt Grotesk',
+    default,
+    default,
+    uppercase,
+    center
+  );
+  text-wrap: wrap;
+}
+.A_go-to-button {
+  @include font(var(--orange), 'Pitagon Sans Mono', 1rem);
+  &:hover {
+    text-decoration-line: underline;
+  }
+}
+
+//videos and tests
+
+.A_cover-lead {
+  @include font(var(--black), 'Pitagon Sans Mono', 1rem);
+  padding: 0 0.5rem;
+}
+
+.A_videos-cover {
+  width: 42.125rem;
+  height: 21.875rem;
+  @include cover;
+  &.Image-type {
+    background-image: url('./././images/articles/article-kletki-dlya-detki.jpg');
+    position: relative;
+    &::after {
+      @include gradient;
+    }
+  }
+}
+
+.A_question-text {
+  @include font(var(--black), 'Pitagon Sans Mono');
+}
+
+.A_test-progress {
+  @include font(var(--black), 'Pitagon Sans Mono');
+  * {
+    display: inline;
+  }
+}
+.Orange {
+  color: var(--orange);
+}
+
+.A_test-score {
+  @include font(var(--white), 'Phlatt Grotesk', default, default, uppercase);
+}
+
+.A_score-comment {
+  @include font(var(--white), 'Pitagon Sans Mono');
+}
+
+.A_test-button {
+  @include font(var(--white), 'Phlatt Grotesk', 1rem, 120%);
+  display: inline-flex;
+  padding: 0.5rem 1rem;
+  border-radius: 5rem;
+  background: var(--black);
+  transition: 0.1s;
+  &:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.1s;
+  }
+  &.Select {
+    background: var(--orange);
+  }
+  &.Retry {
+    background: var(--white);
+    color: var(--black);
+  }
+}
+
+//footer
+
+.A_form-message {
+  @include font(var(--white), 'Pitagon Sans Mono');
+  width: inherit;
+}
