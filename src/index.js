@@ -5,11 +5,37 @@ const eventListeners = []
 const messageGroups = [
   {
     questions: ['какое ты изобретение?'],
-    answers: ['шаролет', 'лампышка', 'роликоласта']
+    answers: [
+      {
+        text: 'шаролет',
+        count: 1
+      },
+      {
+        text: 'лампышка',
+        count: 0
+      },
+      {
+        text: 'роликоласта',
+        count: 0
+      }
+    ]
   },
   {
     questions: ['сколько тебе лет'],
-    answers: ['10', '18', '20']
+    answers: [
+      {
+        text: '10',
+        count: 0
+      },
+      {
+        text: '18',
+        count: 1
+      },
+      {
+        text: '20',
+        count: 0
+      }
+    ]
   },
   {
     questions: ['почему ты интересуешься изобретениями?'],
