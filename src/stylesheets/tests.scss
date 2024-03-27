@@ -1,0 +1,42 @@
+.tests {
+  .C_tests {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+  }
+}
+.test {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  // gap: 5rem;
+  // align-items: flex-start;
+  align-items: center;
+
+  .M_go-to-button {
+    max-width: 52.125rem;
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .O_test-progress-container {
+    // display: flex;
+    text-align: center;
+  }
+
+  .One {
+    display: flex;
+  }
+  .Two {
+    display: flex;
+  }
+  .Three {
+    display: flex;
+  }
+  .Four {
+    display: flex;
+  }
+  .Five {
+    display: flex;
+  }
+}

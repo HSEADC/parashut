@@ -29,7 +29,8 @@
   align-items: flex-start;
   align-items: center;
   gap: 1rem;
-  width: 805px;
+  max-width: 50.5rem;
+  padding: 0 2rem;
 
   &.Videos {
     width: 21.125rem;

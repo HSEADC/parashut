@@ -120,6 +120,22 @@ module.exports = {
       filename: './tests.html'
     }),
 
+    //Articles
+    new HtmlWebpackPlugin({
+      template: './src/articles/its-all-in-the-hat.html',
+      filename: './articles/its-all-in-the-hat.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/partials/rec-cards-article.html',
+      filename: './partials/rec-cards-article.html'
+    }),
+
+    //tests
+    new HtmlWebpackPlugin({
+      template: './src/tests/what-kind-of-inventor-are-you.html',
+      filename: './tests/what-kind-of-inventor-are-you.html'
+    }),
+
     //Components
     new HtmlWebpackPlugin({
       template: './src/components.html',
@@ -155,6 +171,31 @@ module.exports = {
       {
         path: path.join(__dirname, './src/partials/header.html'),
         location: 'header',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/icon.html'),
+        location: 'icon',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/rec-cards-article.html'),
+        location: 'rec-cards-article',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/header-section.html'),
+        location: 'header-section',
         template_filename: '*',
         priority: 'replace'
       }

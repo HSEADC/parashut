@@ -3,6 +3,10 @@
 h1 {
   font-size: 80px;
   line-height: 120%;
+
+  @media (max-width: 420px) {
+    font-size: 56px;
+  }
 }
 
 h2 {
@@ -45,6 +49,7 @@ h6 {
   display: inline-flex;
   padding: 0.125rem 0.5rem;
   border-radius: 2rem;
+  height: fit-content;
 }
 
 //cards
@@ -129,31 +134,57 @@ h6 {
   &.Image-type {
     background-image: url('./././images/articles/article-kletki-dlya-detki.jpg');
   }
+  @media (max-width: 660px) {
+    height: 20rem;
+  }
+  @media (max-width: 480px) {
+    height: 15rem;
+  }
 }
 .A_image-article {
   @include cover;
-  width: 50rem;
+  width: 100%;
   height: 28.125rem;
   &.Image-type {
     background-image: url('./././images/articles/article-kletki-dlya-detki.jpg');
   }
+  @media (max-width: 660px) {
+    height: 20rem;
+  }
+  @media (max-width: 480px) {
+    height: 15rem;
+  }
+  // @media (max-width: 350px) {
+  //   height: 10rem;
+  // }
 }
 
 .A_text-article {
   @include font(var(--black), 'Pitagon Sans Mono', 1.25rem, 150%);
+  blockquote {
+    @include font(
+      var(--orange),
+      'Pitagon Sans Mono',
+      1.5rem,
+      120%,
+      default,
+      center
+    );
+    padding: 1rem 0rem;
+  }
 }
 
-.A_quote {
-  @include font(
-    var(--orange),
-    'Pitagon Sans Mono',
-    1.5rem,
-    120%,
-    default,
-    center
-  );
-  padding: 1rem 0rem;
-}
+// .A_quote {
+//   @include font(
+//     var(--orange),
+//     'Pitagon Sans Mono',
+//     1.5rem,
+//     120%,
+//     default,
+//     center
+//   );
+//   padding: 1rem 0rem;
+// }
 
 .A_image-descriprion {
   @include font(var(--black), 'Pitagon Sans Mono', 1rem);
@@ -161,7 +192,7 @@ h6 {
   padding: 0rem 0.75rem;
   border-radius: 0.25rem;
   background: var(--orange);
-  max-width: 50%;
+  // max-width: 50%;
 }
 
 //titles
@@ -180,6 +211,7 @@ h6 {
     center
   );
   text-wrap: wrap;
+  white-space: normal;
 }
 .A_go-to-button {
   @include font(var(--orange), 'Pitagon Sans Mono', 1rem);
@@ -191,7 +223,7 @@ h6 {
 //videos and tests
 
 .A_cover-lead {
-  @include font(var(--black), 'Pitagon Sans Mono', 1rem);
+  @include font(var(--black), 'Phlatt Grotesk', 1rem);
   padding: 0 0.5rem;
 }
 
@@ -255,4 +287,45 @@ h6 {
 .A_form-message {
   @include font(var(--white), 'Pitagon Sans Mono');
   width: inherit;
+}
+//cover
+
+.A_large-text {
+  // padding: 0 0 0 5rem;
+
+  margin: 0 auto;
+
+  @include font(var(--black), 'Phlatt Grotesk', 10rem, default, uppercase);
+  // margin: 0 auto;
+  @media (min-width: 1440px) {
+    max-width: 67.75rem;
+    margin: 0 auto;
+    // padding: 0 0 0 1rem;
+  }
+  @media (min-width: 1240px) and (max-width: 1440px) {
+    max-width: 67.75rem;
+    // margin: 0 auto;
+    // padding: 0 0 0 1rem;
+  }
+  @media (min-width: 956px) and (max-width: 1239px) {
+    max-width: 55rem;
+    font-size: 8rem;
+    padding: 0 0 0 1rem;
+    // margin: 0 auto;
+  }
+  // @media (min-width: 858px) and (max-width: 965px) {
+  //   max-width: 45rem;
+  //   font-size: 6rem;
+  //   padding: 0 0 0 4rem;
+  // }
+  @media (min-width: 689px) and (max-width: 965px) {
+    font-size: 5.5rem;
+    max-width: 40rem;
+    padding: 0 0 0 3rem;
+  }
+
+  @media (min-width: 568px) and (max-width: 688px) {
+    font-size: 5rem;
+    max-width: 33rem;
+  }
 }
