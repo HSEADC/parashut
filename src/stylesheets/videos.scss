@@ -14,10 +14,14 @@
   // align-items: flex-start;
   align-items: center;
 
+  .W_section-lead {
+    max-width: 21.5rem;
+  }
+
   .M_go-to-button {
-    max-width: 52.125rem;
+    padding: 2rem 0 0 3rem;
+    // max-width: 52.125rem;
     width: 100%;
-    padding: 2rem;
   }
   // display: flex;
   // flex-direction: column;

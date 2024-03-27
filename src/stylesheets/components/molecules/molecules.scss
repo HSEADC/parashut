@@ -56,6 +56,11 @@
   @media (max-width: 350px) {
     padding: 0 1.25rem;
   }
+  &.Video {
+    @media (max-width: 951px) {
+      margin: 0 auto;
+    }
+  }
 }
 
 .M_image-article {
