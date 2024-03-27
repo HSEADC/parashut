@@ -5,3 +5,34 @@
     margin: 0 auto;
   }
 }
+
+.video {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  // gap: 5rem;
+  // align-items: flex-start;
+  align-items: center;
+
+  .M_go-to-button {
+    max-width: 52.125rem;
+    width: 100%;
+    padding: 2rem;
+  }
+  // display: flex;
+  // flex-direction: column;
+  .A_page-title {
+    text-align: left;
+  }
+  .C_tags {
+    width: 100%;
+  }
+}
+.W_video {
+  margin-top: 2rem;
+  display: inline-flex;
+  padding: 0 3rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}

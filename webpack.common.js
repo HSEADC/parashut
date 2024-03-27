@@ -125,15 +125,17 @@ module.exports = {
       template: './src/articles/its-all-in-the-hat.html',
       filename: './articles/its-all-in-the-hat.html'
     }),
-    new HtmlWebpackPlugin({
-      template: './src/partials/rec-cards-article.html',
-      filename: './partials/rec-cards-article.html'
-    }),
 
     //tests
     new HtmlWebpackPlugin({
       template: './src/tests/what-kind-of-inventor-are-you.html',
       filename: './tests/what-kind-of-inventor-are-you.html'
+    }),
+
+    //videos
+    new HtmlWebpackPlugin({
+      template: './src/videos/its-just-a-coincidence.html',
+      filename: './videos/its-just-a-coincidence.html'
     }),
 
     //Components
