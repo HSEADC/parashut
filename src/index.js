@@ -39,15 +39,54 @@ const messageGroups = [
   },
   {
     questions: ['почему ты интересуешься изобретениями?'],
-    answers: ['это классно', 'я гик', 'мне пофиг']
+    answers: [
+      {
+        text: 'это классно',
+        count: 0
+      },
+      {
+        text: 'я гик',
+        count: 0
+      },
+      {
+        text: 'мне пофиг',
+        count: 1
+      }
+    ]
   },
   {
     questions: ['я люблю кушать'],
-    answers: ['картошку', 'мясо', 'котлеты']
+    answers: [
+      {
+        text: 'картошку',
+        count: 0
+      },
+      {
+        text: 'мясо',
+        count: 1
+      },
+      {
+        text: 'котлеты',
+        count: 0
+      }
+    ]
   },
   {
     questions: ['меня зовут'],
-    answers: ['даша', 'маша', 'костя']
+    answers: [
+      {
+        text: 'даша',
+        count: 1
+      },
+      {
+        text: 'маша',
+        count: 0
+      },
+      {
+        text: 'костя',
+        count: 0
+      }
+    ]
   }
 ]
 
