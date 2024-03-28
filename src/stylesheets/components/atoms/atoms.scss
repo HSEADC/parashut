@@ -233,6 +233,9 @@ h6 {
     height: 15rem;
   }
 }
+.A_burger {
+  display: none;
+}
 .A_image-article {
   @include cover;
   width: 100%;
