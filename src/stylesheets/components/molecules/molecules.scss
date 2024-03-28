@@ -20,6 +20,9 @@
   width: inherit;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--white);
+  &::placeholder {
+    color: var(--white);
+  }
 }
 .M_search {
   @include font(default, 'Phlatt Grotesk', 1rem);
@@ -49,15 +52,38 @@
   align-items: flex-start;
   gap: 1rem;
   width: 100%;
-  max-width: 32rem;
+  max-width: 39rem;
+  padding: 0 1.25rem;
   @media (max-width: 480px) {
-    padding: 0 1.5rem;
+    // padding: 0 1.5rem;
   }
   @media (max-width: 350px) {
     padding: 0 1.25rem;
   }
   &.Video {
-    @media (max-width: 951px) {
+    @media (min-width: 621px) {
+      margin: 0 auto;
+      max-width: 36rem;
+    }
+  }
+  @media (max-width: 620px) {
+    .A_videos-cover {
+      width: 27.125rem;
+      height: 15.875rem;
+      margin: 0 auto;
+    }
+  }
+  @media (max-width: 540px) {
+    .A_videos-cover {
+      width: 22.125rem;
+      height: 12.875rem;
+      margin: 0 auto;
+    }
+  }
+  @media (max-width: 482px) {
+    .A_videos-cover {
+      width: 19rem;
+      height: 11.875rem;
       margin: 0 auto;
     }
   }

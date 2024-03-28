@@ -1,4 +1,7 @@
 .videos {
+  @media (max-width: 568px) {
+    width: auto;
+  }
   .C_videos {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -7,6 +10,9 @@
 }
 
 .video {
+  @media (max-width: 568px) {
+    width: auto;
+  }
   width: 100%;
   display: inline-flex;
   flex-direction: column;
@@ -33,10 +39,15 @@
   }
 }
 .W_video {
+  margin: 0 auto;
   margin-top: 2rem;
   display: inline-flex;
   padding: 0 3rem;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (max-width: 482px) {
+    padding: 0 2rem;
+  }
 }

@@ -29,6 +29,10 @@ h2 {
 h3 {
   font-size: 48px;
   line-height: 110%;
+
+  @media (max-width: 482px) {
+    font-size: 36px;
+  }
 }
 
 h4 {
@@ -146,8 +150,84 @@ h6 {
   &.Image-type {
     background-image: url('./././images/articles/article-kletki-dlya-detki.jpg');
   }
+  &.hat-article-cover {
+    background-image: url('./././images/articles/hat-article-cover.jpg');
+  }
+  &.glasses-article-cover {
+    background-image: url('./././images/articles/glasses-article-cover.jpg');
+  }
+  &.cyber-article-cover {
+    background-image: url('./././images/articles/cyber-article-cover.jpg');
+  }
+  &.kids-cage-article-cover {
+    background-image: url('./././images/articles/kids-cage-article-cover.jpg');
+  }
+  &.table-tannies-article-cover {
+    background-image: url('./././images/articles/table-tannies-article-cover.jpg');
+  }
+  &.serf-article-cover {
+    background-image: url('./././images/articles/serf-article-cover.jpg');
+  }
+  &.tv-article-cover {
+    background-image: url('./././images/articles/tv-article-cover.jpg');
+  }
+  &.dog-article-cover {
+    background-image: url('./././images/articles/dog-article-cover.jpg');
+  }
+  &.supercar-article-cover {
+    background-image: url('./././images/articles/supercar-article-cover.jpg');
+  }
+  &.chindogu-article-cover {
+    background-image: url('./././images/articles/chindogu-article-cover.jpg');
+  }
+  &.dinosfear-article-cover {
+    background-image: url('./././images/articles/dinosfear-article-cover.jpg');
+  }
+  &.car-article-cover {
+    background-image: url('./././images/articles/car-article-cover.jpg');
+  }
+  &.flyingcar_article_cover {
+    background-image: url('./././images/articles/flyingcar_article_cover.jpg');
+  }
+  &.ai-article-cover {
+    background-image: url('./././images/articles/ai-article-cover.jpg');
+  }
+  &.aetotrain-article-cover {
+    background-image: url('./././images/articles/aetotrain-article-cover.jpg');
+  }
+  &.chindogy-article-cover {
+    background-image: url('./././images/articles/chindogy-article-cover.jpg');
+  }
+  &.film-article-cover {
+    background-image: url('./././images/articles/film-article-cover.jpg');
+  }
+  &.reality-article-cover {
+    background-image: url('./././images/articles/reality-article-cover.jpg');
+  }
+  &.parachute-article-cover {
+    background-image: url('./././images/articles/parachute-article-cover.jpg');
+  }
+  &.again_article_cover {
+    background-image: url('./././images/articles/again_article_cover.jpg');
+  }
+  &.isolator-article-cover {
+    background-image: url('./././images/articles/isolator-article-cover.jpg');
+  }
+  &.eggcuber-article-cover {
+    background-image: url('./././images/articles/eggcuber-article-cover.jpg');
+  }
+  &.tvglasses-article-cover {
+    background-image: url('./././images/articles/tvglasses-article-cover.jpg');
+  }
+  &.dog-grabber-cover {
+    background-image: url('./././images/articles/dog-grabber-cover.jpg');
+  }
+  &.pipe-article-cover {
+    background-image: url('./././images/articles/pipe-article-cover.jpg');
+  }
   @media (max-width: 660px) {
     height: 20rem;
+    padding: 0 1rem;
   }
   @media (max-width: 480px) {
     height: 15rem;
@@ -160,6 +240,97 @@ h6 {
   &.Image-type {
     background-image: url('./././images/articles/article-kletki-dlya-detki.jpg');
   }
+  &.isolator-article-big {
+    background-image: url('./././images/articles/isolator-article-big.jpg');
+  }
+  &.isolator-article-second {
+    background-image: url('./././images/articles/isolator-article-second.jpg');
+  }
+  &.eggcuber-article-big {
+    background-image: url('./././images/articles/eggcuber-article-big.jpg');
+  }
+  &.eggcuber-article-second {
+    background-image: url('./././images/articles/eggcuber-article-second.jpg');
+  }
+  &.tvglasses-article-big {
+    background-image: url('./././images/articles/tvglasses-article-big.jpg');
+  }
+  &.tvglasses-article-second {
+    background-image: url('./././images/articles/tvglasses-article-second.jpg');
+  }
+  &.dog-grabber-cover {
+    background-image: url('./././images/articles/dog-grabber-cover.jpg');
+  }
+  &.pipe-article-big {
+    background-image: url('./././images/articles/pipe-article-big.jpg');
+  }
+  &.pipe-article-second {
+    background-image: url('./././images/articles/pipe-article-second.jpg');
+  }
+  &.dinosfear_article_big {
+    background-image: url('./././images/articles/dinosfear_article_big.jpg');
+  }
+  &.car-article-big {
+    background-image: url('./././images/articles/car-article-big.jpg');
+  }
+  &.flyingcar_article_big {
+    background-image: url('./././images/articles/flyingcar_article_big.jpg');
+  }
+  &.ai-article-big {
+    background-image: url('./././images/articles/ai-article-big.jpg');
+  }
+  &.aetotrain-article-big {
+    background-image: url('./././images/articles/aetotrain-article-big.jpg');
+  }
+  &.chindogy-article-big {
+    background-image: url('./././images/articles/chindogy-article-big.jpg');
+  }
+  &.chindogy-article-second {
+    background-image: url('./././images/articles/chindogy-article-second.jpg');
+  }
+  &.film-article-big {
+    background-image: url('./././images/articles/film-article-big.jpg');
+  }
+  &.reality-article-big {
+    background-image: url('./././images/articles/reality-article-big.jpg');
+  }
+  &.parachute-article-big {
+    background-image: url('./././images/articles/parachute-article-big.jpg');
+  }
+  &.again_article_second {
+    background-image: url('./././images/articles/again_article_second.jpg');
+  }
+  &.hat-article-big {
+    background-image: url('./././images/articles/hat-article-big.jpg');
+  }
+  &.glasses-article-big {
+    background-image: url('./././images/articles/glasses-article-big.jpg');
+  }
+  &.cyber-article-big {
+    background-image: url('./././images/articles/cyber-article-big.jpg');
+  }
+  &.kids-cage-article-big {
+    background-image: url('./././images/articles/kids-cage-article-big.jpg');
+  }
+  &.table-tannies-article-big {
+    background-image: url('./././images/articles/table-tannies-article-big.jpg');
+  }
+  &.serf-article-big {
+    background-image: url('./././images/articles/serf-article-big.jpg');
+  }
+  &.tv-article-big {
+    background-image: url('./././images/articles/tv-article-big.jpg');
+  }
+  &.dog-article-big {
+    background-image: url('./././images/articles/dog-article-big.jpg');
+  }
+  &.supercar-article-big {
+    background-image: url('./././images/articles/supercar-article-big.jpg');
+  }
+  &.chindogu-article-big {
+    background-image: url('./././images/articles/chindogu-article-big.jpg');
+  }
+
   @media (max-width: 660px) {
     height: 20rem;
   }
@@ -237,7 +408,8 @@ h6 {
 .A_cover-lead {
   @include font(var(--black), 'Phlatt Grotesk', 1rem);
   padding: 0 0.5rem;
-  @media (max-width: 530px) {
+  @media (min-width: 440px) and (max-width: 530px) {
+    padding: 0 2rem;
   }
 
   @media (max-width: 440px) {
@@ -278,8 +450,11 @@ h6 {
   @include font(var(--white), 'Phlatt Grotesk', default, default, uppercase);
 }
 
-.A_score-comment {
+.A_test-text {
   @include font(var(--white), 'Pitagon Sans Mono');
+}
+.A_test-comment {
+  @include font(var(--white), 'Phlatt Grotesk', 1rem);
 }
 
 .A_test-button {
@@ -347,5 +522,10 @@ h6 {
   @media (min-width: 568px) and (max-width: 688px) {
     font-size: 5rem;
     max-width: 33rem;
+  }
+
+  @media (max-width: 568px) {
+    font-size: 3.8rem;
+    max-width: 24rem;
   }
 }

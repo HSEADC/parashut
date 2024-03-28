@@ -4,8 +4,22 @@
     padding-bottom: 2rem;
     margin: 0 auto;
   }
+  @media (min-width: 460px) and (max-width: 668px) {
+    .O_articles {
+      .A_title-text {
+        padding-left: 2rem;
+      }
+    }
+  }
+
+  @media (max-width: 568px) {
+    width: auto;
+  }
 }
 .test {
+  @media (max-width: 568px) {
+    width: auto;
+  }
   .W_section-lead {
     max-width: 48.5rem;
   }

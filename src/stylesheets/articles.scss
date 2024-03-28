@@ -1,4 +1,7 @@
 .articles {
+  @media (max-width: 568px) {
+    width: auto;
+  }
   .C_articles {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -6,6 +9,9 @@
   }
 }
 .article {
+  @media (max-width: 568px) {
+    width: auto;
+  }
   width: 100%;
   display: inline-flex;
   flex-direction: column;
@@ -68,6 +74,11 @@
 
   .O_articles {
     padding: 4rem 0 2rem 0;
+    @media (min-width: 460px) and (max-width: 668px) {
+      .A_title-text {
+        padding-left: 1rem;
+      }
+    }
     @media (max-width: 480px) {
       padding: 3rem 1.25rem;
     }

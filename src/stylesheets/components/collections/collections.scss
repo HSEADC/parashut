@@ -84,6 +84,9 @@
   @media (min-width: 568px) and (max-width: 967px) {
     max-width: 33.5rem;
   }
+  @media (max-width: 568px) {
+    justify-content: center;
+  }
 }
 
 .C_articles {
@@ -105,6 +108,9 @@
   @media (min-width: 568px) and (max-width: 967px) {
     max-width: 33.5rem;
   }
+  @media (max-width: 568px) {
+    justify-content: center;
+  }
   // margin: 1rem auto;
 }
 .C_tests {
@@ -124,6 +130,9 @@
   }
   @media (min-width: 568px) and (max-width: 967px) {
     max-width: 33.5rem;
+  }
+  @media (max-width: 568px) {
+    justify-content: center;
   }
   // margin: 1rem auto;
 }
