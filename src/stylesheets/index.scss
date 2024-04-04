@@ -10,8 +10,6 @@ body {
   min-width: 360px;
   hyphens: auto;
 
-  // -ms-hyphens: auto;
-  // -webkit-hyphens: auto;
   // hyphens: auto;
   // hyphenate-limit-chars: 6 3 2;
   // -ms-hyphenate-limit-zone: 8%;
@@ -30,7 +28,7 @@ body {
   // -ms-hyphenate-limit-last: always;
 }
 
-.bag {
+body.bug {
   display: flex;
   flex-direction: column;
   align-items: center;
