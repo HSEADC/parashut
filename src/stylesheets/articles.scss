@@ -1,4 +1,4 @@
-.articles {
+body.articles {
   @media (max-width: 568px) {
     width: auto;
   }
@@ -8,7 +8,7 @@
     margin: 0 auto;
   }
 }
-.article {
+body.article {
   @media (max-width: 568px) {
     width: auto;
   }

@@ -1,0 +1,35 @@
+body {
+  $cygre-reg: '../fonts/Cygre/Cygre-Regular.woff';
+}
+.O_Search {
+  display: flex;
+  margin: 50px;
+  gap: 10px;
+}
+.A_SearchInput {
+  border: 1px solid;
+  border-radius: 0;
+  padding: 10px 20px;
+}
+&:focus {
+  border-color: inherit;
+  box-shadow: none;
+  outline: none;
+}
+.A_Button {
+  background-color: aliceblue;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover:not(.disabled) {
+    background-color: lighten(var(--back-grey), 10%);
+  }
+
+  &.disabled {
+    background-color: var(--back-grey);
+    color: gray;
+    cursor: default;
+  }
+}

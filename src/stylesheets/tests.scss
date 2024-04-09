@@ -1,4 +1,4 @@
-.tests {
+body.tests {
   .C_tests {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -16,7 +16,8 @@
     width: auto;
   }
 }
-.test {
+
+body.test {
   @media (max-width: 568px) {
     width: auto;
   }

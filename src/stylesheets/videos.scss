@@ -1,4 +1,4 @@
-.videos {
+body.videos {
   @media (max-width: 568px) {
     width: auto;
   }
@@ -9,7 +9,7 @@
   }
 }
 
-.video {
+body.video {
   @media (max-width: 568px) {
     width: auto;
   }

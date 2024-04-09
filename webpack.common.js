@@ -8,19 +8,20 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js',
-    test_1: './src/test_1.js',
-    test_2: './src/test_2.js',
-    test_3: './src/test_3.js',
-    test_4: './src/test_4.js',
-    test_5: './src/test_5.js',
-    test_6: './src/test_6.js',
-    test_7: './src/test_7.js',
-    test_8: './src/test_8.js',
-    test_9: './src/test_9.js',
-    test_10: './src/test_10.js',
-    test_11: './src/test_11.js',
-    test_12: './src/test_12.js'
+    index: './src/js/index.js',
+    test_1: './src/js/test_1.js',
+    test_2: './src/js/test_2.js',
+    test_3: './src/js/test_3.js',
+    test_4: './src/js/test_4.js',
+    test_5: './src/js/test_5.js',
+    test_6: './src/js/test_6.js',
+    test_7: './src/js/test_7.js',
+    test_8: './src/js/test_8.js',
+    test_9: './src/js/test_9.js',
+    test_10: './src/js/test_10.js',
+    test_11: './src/js/test_11.js',
+    test_12: './src/js/test_12.js',
+    search: './src/js/search-vanilla.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -119,6 +120,7 @@ module.exports = {
       filename: './index.html',
       chunks: ['index']
     }),
+
     //Section
     new HtmlWebpackPlugin({
       template: './src/articles.html',
@@ -364,6 +366,12 @@ module.exports = {
       template: './src/tests/total-concentration.html',
       filename: './tests/total-concentration.html',
       chunks: ['index', 'test_12']
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/search.html',
+      filename: './search.html',
+      chunks: ['index', 'search']
     }),
 
     //videos
