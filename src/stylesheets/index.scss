@@ -5,6 +5,13 @@
   // margin: 0 auto;
 }
 
+.none {
+  display: none;
+}
+
+.pos-absolut {
+  position: absolute;
+}
 body {
   background-color: var(--back-grey);
   min-width: 360px;
