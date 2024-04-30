@@ -1,4 +1,9 @@
 import '../index.css'
+
+document.addEventListener('DOMContentLoaded', () => {
+  popupSequence()
+})
+
 //для поиска карточек
 function popupSequence() {
   const popups = document.querySelectorAll('.popup') //находим все карточки с классом
@@ -6,7 +11,6 @@ function popupSequence() {
   popups.forEach((popup, index) => {
     // const popup = document.querySelector('.popup')
     positionPopup(popup) //запускаем функция для позиционирования карточек
-    popup.classList.remove('none') //делаем карточки видимыми, у класса  none надо прописать display:none и добавить его везде
   })
 }
 
