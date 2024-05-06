@@ -1,18 +1,17 @@
-@import 'stylesheets/reset.scss';
-@import 'fonts.css';
-@import 'stylesheets/vars.scss';
+/* основные стили */
 @import 'stylesheets/index.scss';
+@import 'stylesheets/reset.scss';
+@import 'fonts.scss';
 @import 'stylesheets/mixins.scss';
+@import 'stylesheets/vars.scss';
 
-@import 'stylesheets/components/quarks/quarks.scss';
-@import 'stylesheets/components/molecules/molecules.scss';
-@import 'stylesheets/components/collections/collections.scss';
-@import 'stylesheets/components/wrappers/wrappers.scss';
-@import 'stylesheets/components/organisms/organisms.scss';
-@import 'stylesheets/components/atoms/atoms.scss';
+/* стили компонентов */
 
-@import 'stylesheets/articles.scss';
-@import 'stylesheets/videos.scss';
-@import 'stylesheets/tests.scss';
+@import 'stylesheets/components/quarks.scss';
+@import 'stylesheets/components/molecules.scss';
+@import 'stylesheets/components/collections.scss';
+@import 'stylesheets/components/wrappers.scss';
+@import 'stylesheets/components/organisms.scss';
+@import 'stylesheets/components/atoms.scss';
 
-/* articles */
+/* прочие стили подключать ниже */
