@@ -4,11 +4,10 @@
   margin-right: 8px;
   // margin: 0 auto;
 }
-
 body {
   background-color: var(--back-grey);
   min-width: 360px;
-  hyphens: auto;
+  // hyphens: auto;
 
   // hyphens: auto;
   // hyphenate-limit-chars: 6 3 2;
@@ -48,7 +47,7 @@ body.bug {
   }
 }
 
-.main-page {
+body.main-page {
   width: 100%;
   display: inline-flex;
   flex-direction: column;
@@ -57,5 +56,15 @@ body.bug {
   // padding-bottom: 2rem;
   @media (max-width: 568px) {
     width: auto;
+  }
+}
+
+body.articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > .C_tags {
+    margin-top: 3.5rem;
   }
 }

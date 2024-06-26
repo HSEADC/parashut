@@ -9,6 +9,7 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/js/index.js',
+    filter: './src/js/filter.js',
     test_1: './src/js/test_1.js',
     test_2: './src/js/test_2.js',
     test_3: './src/js/test_3.js',
@@ -123,7 +124,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/articles.html',
       filename: './articles.html',
-      chunks: ['index']
+      chunks: ['index', 'filter']
     }),
     new HtmlWebpackPlugin({
       template: './src/videos.html',
