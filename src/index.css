@@ -15,4 +15,6 @@
 @import 'stylesheets/videos.scss';
 @import 'stylesheets/tests.scss';
 
+@import 'components/M_searchForm/M_searchForm.scss';
+
 /* articles */
