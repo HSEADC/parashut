@@ -4,12 +4,12 @@
 @import 'stylesheets/index.scss';
 @import 'stylesheets/mixins.scss';
 
-@import 'stylesheets/components/quarks/quarks.scss';
-@import 'stylesheets/components/molecules/molecules.scss';
-@import 'stylesheets/components/collections/collections.scss';
-@import 'stylesheets/components/wrappers/wrappers.scss';
-@import 'stylesheets/components/organisms/organisms.scss';
-@import 'stylesheets/components/atoms/atoms.scss';
+@import 'stylesheets/components/quarks.scss';
+@import 'stylesheets/components/molecules.scss';
+@import 'stylesheets/components/collections.scss';
+@import 'stylesheets/components/wrappers.scss';
+@import 'stylesheets/components/organisms.scss';
+@import 'stylesheets/components/atoms.scss';
 
 @import 'stylesheets/articles.scss';
 @import 'stylesheets/videos.scss';
