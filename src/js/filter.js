@@ -18,9 +18,8 @@ function updateSelectOptionList() {
 
   multiSelectOptions.forEach((option) => {
     const { text, active } = option
-
+    const listItem = document.createElement('button')
     if (!active) {
-      const listItem = document.createElement('button')
       listItem.classList.add('Head-tag', 'A_selectInput', 'A_tag')
       listItem.innerText = text
 
@@ -33,6 +32,7 @@ function updateSelectOptionList() {
         listItem.classList.add('active')
         updateSelectData(option)
         updateContent()
+        console.log(option)
       })
 
       optionList.appendChild(listItem)

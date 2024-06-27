@@ -3,6 +3,7 @@ import React from 'react'
 import { getPostTeasers } from '../../search-vanilla-data.js'
 
 import M_searchForm from '../M_searchForm/M_searchForm.jsx'
+import M_formSearch from '../M_formSearch/M_formSearch.jsx'
 import M_postTeaser from '../M_postTeaser/M_postTeaser.jsx'
 
 export default class O_searchBar extends React.Component {
@@ -88,7 +89,7 @@ export default class O_searchBar extends React.Component {
 
     return (
       <div className="O_searchBar">
-        <M_searchForm
+        <M_formSearch
           isSearchButtonDisabled={isSearchButtonDisabled}
           searchInputValue={searchInputValue}
           handleSearchSubmit={this.handleSearchSubmit}
