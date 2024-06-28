@@ -11,6 +11,8 @@ module.exports = {
     index: './src/js/index.js',
     filter: './src/js/filter.js',
     searchBar: './src/searchBar.jsx',
+    search: './src/search.jsx',
+
     test_1: './src/js/test_1.js',
     test_2: './src/js/test_2.js',
     test_3: './src/js/test_3.js',
@@ -119,8 +121,16 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['index', 'searchBar']
+      chunks: ['index', 'searchBar', 'search']
     }),
+
+    //Search
+    new HtmlWebpackPlugin({
+      template: './src/search.html',
+      filename: './search.html',
+      chunks: ['index', 'searchBar', 'search']
+    }),
+
     //Section
     new HtmlWebpackPlugin({
       template: './src/articles.html',

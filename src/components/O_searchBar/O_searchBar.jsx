@@ -2,18 +2,20 @@ import './O_searchBar.scss'
 import React from 'react'
 import { getPostTeasers } from '../../search-vanilla-data.js'
 
-import M_searchForm from '../M_searchForm/M_searchForm.jsx'
+// import M_searchForm from '../M_searchForm/M_searchForm.jsx'
 import M_formSearch from '../M_formSearch/M_formSearch.jsx'
-import M_postTeaser from '../M_postTeaser/M_postTeaser.jsx'
+import M_postSuggestion from '../M_postSuggestion/M_postSuggestion.jsx'
 
 export default class O_searchBar extends React.Component {
   constructor(props) {
     super(props)
 
+    const { searchInputValue } = this.props
+
     this.state = {
       isSearchButtonDisabled: true,
-      searchInputValue: '',
-      postTeasers: []
+      postTeasers: [],
+      searchInputValue
     }
   }
 
@@ -43,10 +45,19 @@ export default class O_searchBar extends React.Component {
 
     if (searchInputValue.length >= 3) {
       console.log('Submit')
+
+      const separator = ':8080/'
+      //const separator = '.adc.ac/'
+
+      const url = window.location.href.split(separator)[0]
+
+      // Устанавливаем новый URL с добавлением параметра request.
+      window.location.href =
+        url + separator + 'search.html?request=' + searchInputValue
     }
   }
 
-  renderPostTeasers = () => {
+  renderPostSuggestions = () => {
     const { postTeasers } = this.state
     let posts = []
     const searchInputValue = this.state.searchInputValue.toLowerCase()
@@ -70,7 +81,7 @@ export default class O_searchBar extends React.Component {
         description.includes(searchInputValue)
       ) {
         posts.push(
-          <M_postTeaser
+          <M_postSuggestion
             title={title}
             description={description}
             key={teaser.id}
@@ -80,7 +91,7 @@ export default class O_searchBar extends React.Component {
       }
     })
 
-    return <div className="C_postTeasers">{posts}</div>
+    return <div className="C_postSuggestions">{posts}</div>
     // return posts
   }
 
@@ -92,10 +103,12 @@ export default class O_searchBar extends React.Component {
         <M_formSearch
           isSearchButtonDisabled={isSearchButtonDisabled}
           searchInputValue={searchInputValue}
-          handleSearchSubmit={this.handleSearchSubmit}
           handleSearchInput={this.handleSearchInput}
+          handleSearchSubmit={this.handleSearchSubmit}
         />
-        {searchInputValue.length >= 3 && this.renderPostTeasers()}
+        {searchInputValue.length >= 3 &&
+          !isSearchButtonDisabled &&
+          this.renderPostSuggestions()}
       </div>
     )
   }
