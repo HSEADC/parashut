@@ -1,5 +1,11 @@
 //widgets
 
+#cover {
+  position: relative;
+  height: 720px;
+  width: 100%;
+}
+
 .O_note {
   width: 16.5rem;
   padding: 1rem;
@@ -46,6 +52,13 @@
   &.Long {
     width: 33.5rem;
   }
+
+  &.pos-absolut {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
 }
 
 .O_invention {
@@ -61,6 +74,12 @@
   }
   @media (max-width: 568px) {
     width: 23.5rem;
+  }
+  &.pos-absolut {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
   }
 }
 

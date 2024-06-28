@@ -68,7 +68,8 @@ h6 {
   height: fit-content;
 
   &.active {
-    background-color: aqua;
+    background-color: var(--orange);
+    color: var(--white) !important;
   }
 }
 
@@ -486,12 +487,6 @@ h6 {
 
 //footer
 
-.A_text-large {
-  position: relative;
-  height: auto;
-  width: 100%;
-}
-
 .A_form-message {
   @include font(var(--white), 'Pitagon Sans Mono');
   width: inherit;
@@ -499,11 +494,19 @@ h6 {
 //cover
 
 .A_large-text {
-  // padding: 0 0 0 5rem;
+  // padding: 0 0 0 5rem
 
   margin: 0 auto;
   // position: absolute;
-  @include font(var(--black), 'Phlatt Grotesk', 10rem, default, uppercase);
+
+  &.pos-absolut {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: -100;
+  }
+  @include font(var(--black), 'Phlatt Grotesk', 5rem, default, uppercase);
   // margin: 0 auto;
   @media (min-width: 1440px) {
     max-width: 67.75rem;
@@ -511,7 +514,7 @@ h6 {
     // padding: 0 0 0 1rem;
   }
   @media (min-width: 1240px) and (max-width: 1440px) {
-    max-width: 67.75rem;
+    max-width: 64.75rem;
     // margin: 0 auto;
     // padding: 0 0 0 1rem;
   }
