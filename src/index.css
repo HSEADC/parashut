@@ -5,7 +5,7 @@
 @import 'stylesheets/mixins.scss';
 
 @import 'stylesheets/styleguide.scss';
-/* @import 'stylesheets/mixins.scss'; */
+@import 'stylesheets/about-project.scss';
 
 @import 'stylesheets/components/quarks.scss';
 @import 'stylesheets/components/molecules.scss';
