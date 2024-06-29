@@ -131,6 +131,14 @@ module.exports = {
       chunkFilename: '[id].[contenthash].css'
     }),
 
+    //styleguide
+
+    new HtmlWebpackPlugin({
+      template: './src/styleguide.html',
+      filename: './styleguide.html',
+      chunks: ['index']
+    }),
+
     // Index
     new HtmlWebpackPlugin({
       template: './src/index.html',
