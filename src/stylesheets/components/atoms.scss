@@ -75,11 +75,12 @@ h6 {
 
 //cards
 .A_card-title {
-  @include font(default, 'Pitagon Sans Mono');
+  @include font(default, 'Pitagon Sans Mono', 2rem!important);
   height: 4.375rem;
   width: 100%;
   &.Orange {
     color: var(--orange);
+    padding-top: 6px;
   }
   &.White {
     color: var(--white);
@@ -389,7 +390,7 @@ h6 {
 //titles
 
 .A_title-text {
-  @include font(var(--black), 'Phlatt Grotesk', default, default, uppercase);
+  @include font(var(--black), 'Phlatt Grotesk', 3rem, default, uppercase);
 }
 
 .A_page-title {

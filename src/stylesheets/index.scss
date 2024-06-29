@@ -4,6 +4,27 @@
   margin-right: 8px;
   // margin: 0 auto;
 }
+body.main-page {
+  #cover {
+    @media screen and (max-width: 1240px) {
+      .O_invention,
+      .O_note,
+      .O_search {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 941px) {
+      display: none;
+    }
+  }
+}
+
+.W_search {
+  @media screen and (max-width: 940px) {
+    display: none;
+  }
+}
+
 body {
   background-color: var(--back-grey);
   min-width: 360px;
@@ -19,6 +40,7 @@ body {
     border-radius: 20px;
     border: 3px solid var(--white);
   }
+
   // hyphens: auto;
 
   // hyphens: auto;
@@ -37,6 +59,18 @@ body {
   // -webkit-hyphenate-limit-lines: 2;
   // -ms-hyphenate-limit-lines: 2;
   // -ms-hyphenate-limit-last: always;
+}
+
+body.museum {
+  .C_widgets {
+    position: relative;
+    margin: 3rem auto;
+    max-width: 69rem;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 
 body.bug {

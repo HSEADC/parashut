@@ -1,4 +1,12 @@
-.tests {
+body.tests {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > .Head-tags {
+    margin-top: 3rem;
+  }
+
   .C_tests {
     padding-top: 2rem;
     padding-bottom: 2rem;
