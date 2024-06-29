@@ -4,6 +4,9 @@
   position: relative;
   height: 720px;
   width: 100%;
+  @media (max-width: 1241px) {
+    display: none;
+  }
 }
 
 .O_note {

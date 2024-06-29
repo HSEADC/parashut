@@ -106,6 +106,7 @@ h6 {
   width: 15rem;
   height: 11rem;
   border-radius: 0.5rem;
+  object-fit: cover;
 }
 
 .A_invention-name {
@@ -394,6 +395,7 @@ h6 {
 }
 
 .A_page-title {
+  font-size: 4rem;
   @include font(
     var(--black),
     'Phlatt Grotesk',
